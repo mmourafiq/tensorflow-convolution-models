@@ -1,12 +1,16 @@
 import numpy as np
+import sklearn.metrics as metrics
 import tensorflow as tf
 from tensorflow.contrib import learn
-import sklearn.metrics as metrics
-
-from deepflow.utils import flatten_convolution
 
 LOG_DIR = '../ops_logs'
 IMAGE_SIZE = 28
+
+
+def flatten_convolution(tensor_in):
+    tendor_in_shape = tensor_in.get_shape()
+    tensor_in_flat = tf.reshape(tensor_in, [tendor_in_shape[0].value or -1, np.prod(tendor_in_shape[1:]).value])
+    return tensor_in_flat
 
 
 def lenet_layer(tensor_in, n_filters, filter_shape, pool_size, activation=tf.nn.tanh, padding='SAME'):
