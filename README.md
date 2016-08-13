@@ -12,6 +12,8 @@ The models:
 
 This repo also contains a notebook that shows the result of the different steps in the convolutional architectures.
 
+For more details please look at this blog post [Playing with convolutions in TensorFlow](http://mourafiq.com/2016/08/10/playing-with-convolutions-in-tensorflow.html)
+
 <img width="425" alt="lenet_model" src="https://cloud.githubusercontent.com/assets/1261626/17627955/6d3b0c86-60b3-11e6-8433-3ce7f2e4ce35.png">
 
 <img width="454" alt="lenet_loss" src="https://cloud.githubusercontent.com/assets/1261626/17627954/6d27a808-60b3-11e6-9c20-bf16f1156a68.png">
